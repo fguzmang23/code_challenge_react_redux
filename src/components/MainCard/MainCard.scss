@@ -1,0 +1,45 @@
+@import "../../globalStyles/globalStylesAndVariables.scss";
+
+.MainCard {
+  display: block;
+  overflow: hidden;
+  width: 80%;
+  background-color: $white;
+  margin: 100px auto 80px;
+  border-radius: $default-border-radius;
+  max-width: $main-card-max-width;
+  &__navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: $navbar-height;
+    width: 100%;
+    background-color: $asistensi-blue;
+    border-bottom-left-radius: $default-border-radius;
+    border-bottom-right-radius: $default-border-radius;
+  }
+  &__company-logo {
+    width: 110px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &____options-container {
+    display: flex;
+  }
+
+  &__option {
+    color: $white;
+    font-size: $unit;
+    margin: 0 $unit;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}

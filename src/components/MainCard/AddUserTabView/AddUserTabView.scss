@@ -1,0 +1,30 @@
+@import "../../../globalStyles/globalStylesAndVariables.scss";
+@import "../../../globalStyles/mixins.scss";
+
+.AddUser {
+  padding: $default-card-padding;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__form-element {
+    padding: 20px;
+    > label {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__submit-button {
+    margin: 0 auto;
+    width: fit-content;
+    @include button;
+  }
+  &__go-back-button {
+    margin: 0 auto;
+    @include button;
+  }
+}

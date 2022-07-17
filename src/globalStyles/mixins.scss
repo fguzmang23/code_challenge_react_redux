@@ -1,0 +1,12 @@
+@import "./globalStylesAndVariables.scss";
+
+@mixin button {
+  padding: $unit / 2 $unit;
+  font-size: $unit;
+  border-radius: $default-border-radius;
+  border: none;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+}

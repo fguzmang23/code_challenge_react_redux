@@ -1,0 +1,13 @@
+@import "../../../globalStyles/globalStylesAndVariables.scss";
+
+.AboutUs {
+  padding: $default-card-padding;
+
+  &__title {
+    margin-top: 0;
+    color: $asistensi-blue;
+  }
+  &__paragraph {
+    font-size: 16px;
+  }
+}
